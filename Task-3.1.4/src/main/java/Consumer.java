@@ -1,16 +1,10 @@
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import org.springframework.http.*;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 public class Consumer {
     public static void main(String[] args) throws JsonProcessingException {
         RestTemplate restTemplate = new RestTemplate();
-
-        MappingJackson2HttpMessageConverter jsonHttpMessageConverter = new MappingJackson2HttpMessageConverter();
-        jsonHttpMessageConverter.getObjectMapper().configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
-        restTemplate.getMessageConverters().add(jsonHttpMessageConverter);
 
         String url = "http://94.198.50.185:7081/api/users";
         ResponseEntity<String> response =  restTemplate.getForEntity(url, String.class);
