@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MS/backend-gateway-client/backend-gateway-client.iml" filepath="$PROJECT_DIR$/MS/backend-gateway-client/backend-gateway-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MS/backend-resources/backend-resources.iml" filepath="$PROJECT_DIR$/MS/backend-resources/backend-resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MS/itm-3.1.5.iml" filepath="$PROJECT_DIR$/MS/itm-3.1.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/task-4.1.iml" filepath="$PROJECT_DIR$/.idea/task-4.1.iml" />
+    </modules>
+  </component>
+</project>
